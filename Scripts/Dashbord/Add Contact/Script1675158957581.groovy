@@ -25,11 +25,16 @@ WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Given Nam
 
 WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Family name button'), 'testing')
 
-WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Email field'), 'testingabc@ccn.com')
+dynamicemail = CustomKeywords.'defaultpackage.custome.randomString'('letters', 9)
 
-WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Company field'), 'new')
+WebUI.setText(findTestObject('Dashboard Elements/Add Contact Elements/Email field'), dynamicemail + '@ccn.com')
 
-WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Company field'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Dashboard Elements/Add Contact Elements/Company field'))
+
+WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Company field'), 'dema')
+
+'Here i send value for any company ex.dema\nthen i selected the first option in the shown list '
+WebUI.click(findTestObject('Dashboard Elements/Add Contact Elements/Select the first option after filling in the company field'))
 
 WebUI.click(findTestObject('Dashboard Elements/Add Contact Elements/Create Contact button'))
 
