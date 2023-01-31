@@ -17,9 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.acceptAlert()
+WebUI.callTestCase(findTestCase('Login/Test Case 01 - Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Dashboard Elements/Add Contact Elements/Add Contact button'))
 
-WebUI.acceptAlert()
+WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Given Name field'), 'testing')
+
+WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Family name button'), 'testing')
+
+WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Email field'), 'testingabc@ccn.com')
+
+WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Company field'), 'new')
+
+WebUI.sendKeys(findTestObject('Dashboard Elements/Add Contact Elements/Company field'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Dashboard Elements/Add Contact Elements/Create Contact button'))
 
