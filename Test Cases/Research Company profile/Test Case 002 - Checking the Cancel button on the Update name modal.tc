@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Test Case 002 - Checking the Cancel button on the Update name modal</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35fcdb11-a4f9-4792-9031-d64329090f76</testCaseGuid>
+</TestCaseEntity>

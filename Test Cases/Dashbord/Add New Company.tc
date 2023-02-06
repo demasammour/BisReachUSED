@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Add Contact</name>
+   <name>Add New Company</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>77e1a2ff-d03b-4683-b360-b5eecc65acaa</testCaseGuid>
+   <testCaseGuid>3df02854-8cf2-4199-82fa-43af37037acd</testCaseGuid>
 </TestCaseEntity>
